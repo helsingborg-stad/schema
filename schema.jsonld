@@ -4,11 +4,11 @@
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "hbg": "http://example.com/schema#"
+        "municipio": "http://example.com/schema#"
     },
     "@graph": [
         {
-            "@id": "hbg:isInternal",
+            "@id": "municipio:isInternal",
             "@type": "rdf:Property",
             "rdfs:label": "isInternal",
             "rdfs:comment": "Indicates whether the job posting is for an internal position.",
@@ -16,7 +16,7 @@
             "rdfs:range": "xsd:boolean"
         },
         {
-            "@id": "hbg:physicalAccessibilityFeatures",
+            "@id": "municipio:physicalAccessibilityFeatures",
             "@type": "rdf:Property",
             "rdfs:label": "physicalAccessibilityFeatures",
             "rdfs:comment": "A list of physical features that are available at the event, e.g. wheelchair access. Multiple textual entries in a list are typically delimited by commas, or by repeating the property.",
