@@ -8,7 +8,7 @@
     },
     "@graph": [
         {
-            "@id": "ex:isInternal",
+            "@id": "hbg:isInternal",
             "@type": "rdf:Property",
             "rdfs:label": "isInternal",
             "rdfs:comment": "Indicates whether the job posting is for an internal position.",
