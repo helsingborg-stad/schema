@@ -4,7 +4,7 @@
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "municipio": "http://example.com/schema#"
+        "municipio": "https://schema.municipio.tech/schema.jsonld"
     },
     "@graph": [
         {
