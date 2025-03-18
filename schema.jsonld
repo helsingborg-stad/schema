@@ -20,7 +20,7 @@
             "@type": "rdf:Property",
             "rdfs:label": "physicalAccessibilityFeatures",
             "rdfs:comment": "A list of physical features that are available at the event, e.g. wheelchair access. Multiple textual entries in a list are typically delimited by commas, or by repeating the property.",
-            "rdfs:domain": "schema:JobPosting",
+            "rdfs:domain": "schema:Event",
             "rdfs:range": "schema:Text"
         }
     ]
