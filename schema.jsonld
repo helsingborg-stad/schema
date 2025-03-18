@@ -14,6 +14,14 @@
             "rdfs:comment": "Indicates whether the job posting is for an internal position.",
             "rdfs:domain": "schema:JobPosting",
             "rdfs:range": "xsd:boolean"
+        },
+        {
+            "@id": "hbg:physicalAccessibilityFeatures",
+            "@type": "rdf:Property",
+            "rdfs:label": "physicalAccessibilityFeatures",
+            "rdfs:comment": "A list of physical features that are available at the event, e.g. wheelchair access. Multiple textual entries in a list are typically delimited by commas, or by repeating the property.",
+            "rdfs:domain": "schema:JobPosting",
+            "rdfs:range": "schema:Text"
         }
     ]
 }
