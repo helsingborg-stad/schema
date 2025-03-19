@@ -35,10 +35,7 @@
             "@id": "municipio:ProgressStatus",
             "@type": "rdfs:Class",
             "rdfs:comment": "Progress status",
-            "rdfs:label": "ProgressStatus",
-            "rdfs:subClassOf": {
-                "@id": "schema:Intangible"
-            }
+            "rdfs:label": "ProgressStatus"
         },
         {
             "@id": "municipio:number",
