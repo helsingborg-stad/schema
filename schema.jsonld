@@ -12,16 +12,28 @@
             "@type": "rdf:Property",
             "rdfs:label": "isInternal",
             "rdfs:comment": "Indicates whether the job posting is for an internal position.",
-            "rdfs:domain": "schema:JobPosting",
-            "rdfs:range": "xsd:boolean"
+            "schema:domainIncludes": {
+                "@id": "schema:JobPosting"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "schema:boolean"
+                }
+            ]
         },
         {
             "@id": "municipio:physicalAccessibilityFeatures",
             "@type": "rdf:Property",
             "rdfs:label": "physicalAccessibilityFeatures",
             "rdfs:comment": "A list of physical features that are available at the event, e.g. wheelchair access. Multiple textual entries in a list are typically delimited by commas, or by repeating the property.",
-            "rdfs:domain": "schema:Event",
-            "rdfs:range": "schema:Text"
+            "schema:rangeIncludes": [
+                {
+                    "@id": "schema:Text"
+                }
+            ],
+            "schema:domainIncludes": {
+                "@id": "schema:Event"
+            }
         }
     ]
 }
