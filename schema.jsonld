@@ -30,6 +30,87 @@
             "schema:domainIncludes": {
                 "@id": "schema:Event"
             }
+        },
+        {
+            "@id": "municipio:ProgressStatus",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Progress status",
+            "rdfs:label": "ProgressStatus",
+            "rdfs:subClassOf": {
+                "@id": "schema:Intangible"
+            }
+        },
+        {
+            "@id": "municipio:number",
+            "@type": "rdf:Property",
+            "rdfs:label": "number",
+            "rdfs:comment": "The number of the progress status.",
+            "schema:rangeIncludes": {
+                "@id": "schema:Number"
+            },
+            "schema:domainIncludes": {
+                "@id": "municipio:ProgressStatus"
+            }
+        },
+        {
+            "@id": "municipio:maxNumber",
+            "@type": "rdf:Property",
+            "rdfs:label": "maxNumber",
+            "rdfs:comment": "The maximum number of the progress status.",
+            "schema:rangeIncludes": {
+                "@id": "schema:Number"
+            },
+            "schema:domainIncludes": {
+                "@id": "municipio:ProgressStatus"
+            }
+        },
+        {
+            "@id": "municipio:minNumber",
+            "@type": "rdf:Property",
+            "rdfs:label": "minNumber",
+            "rdfs:comment": "The minimum number of the progress status.",
+            "schema:rangeIncludes": {
+                "@id": "schema:Number"
+            },
+            "schema:domainIncludes": {
+                "@id": "municipio:ProgressStatus"
+            }
+        },
+        {
+            "@id": "municipio:label",
+            "@type": "rdf:Property",
+            "rdfs:label": "label",
+            "rdfs:comment": "The label of the progress status.",
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:domainIncludes": {
+                "@id": "municipio:ProgressStatus"
+            }
+        },
+        {
+            "@id": "municipio:description",
+            "@type": "rdf:Property",
+            "rdfs:label": "description",
+            "rdfs:comment": "The description of the progress status.",
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:domainIncludes": {
+                "@id": "municipio:ProgressStatus"
+            }
+        },
+        {
+            "@id": "municipio:status",
+            "@type": "rdf:Property",
+            "rdfs:label": "status",
+            "rdfs:comment": "The project status.",
+            "schema:domainIncludes": {
+                "@id": "schema:Project"
+            },
+            "schema:rangeIncludes": {
+                "@id": "municipio:ProgressStatus"
+            }
         }
     ]
 }
