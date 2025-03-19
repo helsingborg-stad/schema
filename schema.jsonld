@@ -15,22 +15,18 @@
             "schema:domainIncludes": {
                 "@id": "schema:JobPosting"
             },
-            "schema:rangeIncludes": [
-                {
-                    "@id": "schema:boolean"
-                }
-            ]
+            "schema:rangeIncludes": {
+                "@id": "schema:Boolean"
+            }
         },
         {
             "@id": "municipio:physicalAccessibilityFeatures",
             "@type": "rdf:Property",
             "rdfs:label": "physicalAccessibilityFeatures",
             "rdfs:comment": "A list of physical features that are available at the event, e.g. wheelchair access. Multiple textual entries in a list are typically delimited by commas, or by repeating the property.",
-            "schema:rangeIncludes": [
-                {
-                    "@id": "schema:Text"
-                }
-            ],
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
             "schema:domainIncludes": {
                 "@id": "schema:Event"
             }
