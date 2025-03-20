@@ -37,7 +37,7 @@
             "rdfs:label": "eventsInSameSeries",
             "rdfs:comment": "One or more event ids that are part of the same series.",
             "schema:rangeIncludes": {
-                "@id": "schema:Text"
+                "@id": "schema:Event"
             },
             "schema:domainIncludes": {
                 "@id": "schema:Event"
