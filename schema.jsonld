@@ -32,12 +32,12 @@
             }
         },
         {
-            "@id": "municipio:eventsSeries",
+            "@id": "municipio:eventsInSameSeries",
             "@type": "rdf:Property",
-            "rdfs:label": "eventsSeries",
-            "rdfs:comment": "A list of events that are part of the same series as the event.",
+            "rdfs:label": "eventsInSameSeries",
+            "rdfs:comment": "One or more event ids that are part of the same series.",
             "schema:rangeIncludes": {
-                "@id": "schema:Event"
+                "@id": "schema:Text"
             },
             "schema:domainIncludes": {
                 "@id": "schema:Event"
