@@ -35,7 +35,7 @@
             "@id": "municipio:eventsInSameSeries",
             "@type": "rdf:Property",
             "rdfs:label": "eventsInSameSeries",
-            "rdfs:comment": "One or more event ids that are part of the same series.",
+            "rdfs:comment": "One or more events that are part of the same series.",
             "schema:rangeIncludes": {
                 "@id": "schema:Event"
             },
