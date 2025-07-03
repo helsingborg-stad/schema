@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Municipio Schema Documentation</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans', Arial, sans-serif;
+            margin: 2em;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', Arial, sans-serif;
+            font-weight: 500;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        .class,
+        .property {
+            margin-bottom: 2em;
+        }
+
+        h3,
+        h4 {
+            margin-bottom: 0.2em;
+        }
+
+        ul {
+            margin-top: 0.2em;
+        }
+
+        .property {
+            padding-left: 1em;
+            border-left: 2px solid #eee;
+        }
+
+        .domain-group {
+            margin-bottom: 2em;
+        }
+
+        .domain-group h3 {
+            color: #2980b9;
+        }
+
+        .schema-link {
+            margin-bottom: 2em;
+            display: block;
+        }
+
+        .logo {
+            max-width: 320px;
+            margin-bottom: 1.5em;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="logo" src="./logotype-municipio-color-blue.svg" alt="Municipio logotype" />
+    <h1>Municipio Schema Documentation</h1>
+    <a class="schema-link" href="schema.jsonld" download>Download schema.jsonld</a>
+    <h2>Classes</h2>
+    <div class="class">
+    <h3 id="municipio:ProgressStatus">ProgressStatus</h3>
+    <p>Progress status</p>
+    <ul>
+      <li><b>Type:</b> rdfs:Class</li>
+      <li><b>Subclass of:</b> schema:Thing</li>
+    </ul>
+  </div>
+    <h2>Properties by Domain</h2>
+    
+    <div class="domain-group">
+      <h3>municipio:ProgressStatus</h3>
+      <div class="property">
+    <h4 id="municipio:description">description</h4>
+    <p>The description of the progress status.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> municipio:ProgressStatus</li>
+      <li><b>Range:</b> schema:Text</li>
+    </ul>
+  </div>
+<div class="property">
+    <h4 id="municipio:label">label</h4>
+    <p>The label of the progress status.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> municipio:ProgressStatus</li>
+      <li><b>Range:</b> schema:Text</li>
+    </ul>
+  </div>
+<div class="property">
+    <h4 id="municipio:maxNumber">maxNumber</h4>
+    <p>The maximum number of the progress status.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> municipio:ProgressStatus</li>
+      <li><b>Range:</b> schema:Number</li>
+    </ul>
+  </div>
+<div class="property">
+    <h4 id="municipio:minNumber">minNumber</h4>
+    <p>The minimum number of the progress status.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> municipio:ProgressStatus</li>
+      <li><b>Range:</b> schema:Number</li>
+    </ul>
+  </div>
+<div class="property">
+    <h4 id="municipio:number">number</h4>
+    <p>The number of the progress status.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> municipio:ProgressStatus</li>
+      <li><b>Range:</b> schema:Number</li>
+    </ul>
+  </div>
+    </div>
+  
+
+    <div class="domain-group">
+      <h3>schema:Event</h3>
+      <div class="property">
+    <h4 id="municipio:eventsInSameSeries">eventsInSameSeries</h4>
+    <p>One or more events that are part of the same series.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> schema:Event</li>
+      <li><b>Range:</b> schema:Event</li>
+    </ul>
+  </div>
+<div class="property">
+    <h4 id="municipio:physicalAccessibilityFeatures">physicalAccessibilityFeatures</h4>
+    <p>A list of physical features that are available at the event, e.g. wheelchair access. Multiple textual entries in a list are typically delimited by commas, or by repeating the property.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> schema:Event</li>
+      <li><b>Range:</b> schema:Text</li>
+    </ul>
+  </div>
+    </div>
+  
+
+    <div class="domain-group">
+      <h3>schema:JobPosting</h3>
+      <div class="property">
+    <h4 id="municipio:isInternal">isInternal</h4>
+    <p>Indicates whether the job posting is for an internal position.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> schema:JobPosting</li>
+      <li><b>Range:</b> schema:Boolean</li>
+    </ul>
+  </div>
+    </div>
+  
+
+    <div class="domain-group">
+      <h3>schema:Project</h3>
+      <div class="property">
+    <h4 id="municipio:status">status</h4>
+    <p>The project status.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> schema:Project</li>
+      <li><b>Range:</b> municipio:ProgressStatus</li>
+    </ul>
+  </div>
+    </div>
+  
+</body>
+
+</html>

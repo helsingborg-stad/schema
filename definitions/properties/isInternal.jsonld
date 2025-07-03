@@ -1,0 +1,12 @@
+{
+    "@id": "municipio:isInternal",
+    "@type": "rdf:Property",
+    "rdfs:label": "isInternal",
+    "rdfs:comment": "Indicates whether the job posting is for an internal position.",
+    "schema:domainIncludes": {
+        "@id": "schema:JobPosting"
+    },
+    "schema:rangeIncludes": {
+        "@id": "schema:Boolean"
+    }
+}

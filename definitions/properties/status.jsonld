@@ -1,0 +1,12 @@
+{
+    "@id": "municipio:status",
+    "@type": "rdf:Property",
+    "rdfs:label": "status",
+    "rdfs:comment": "The project status.",
+    "schema:domainIncludes": {
+        "@id": "schema:Project"
+    },
+    "schema:rangeIncludes": {
+        "@id": "municipio:ProgressStatus"
+    }
+}

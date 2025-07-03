@@ -1,0 +1,9 @@
+{
+    "@id": "municipio:ProgressStatus",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "Progress status",
+    "rdfs:label": "ProgressStatus",
+    "rdfs:subClassOf": {
+        "@id": "schema:Thing"
+    }
+}
