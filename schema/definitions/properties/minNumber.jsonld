@@ -1,0 +1,12 @@
+{
+    "@id": "municipio:minNumber",
+    "@type": "rdf:Property",
+    "rdfs:label": "minNumber",
+    "rdfs:comment": "The minimum number of the progress status.",
+    "schema:rangeIncludes": {
+        "@id": "schema:Number"
+    },
+    "schema:domainIncludes": {
+        "@id": "municipio:ProgressStatus"
+    }
+}

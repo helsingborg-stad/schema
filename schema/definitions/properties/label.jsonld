@@ -1,0 +1,12 @@
+{
+    "@id": "municipio:label",
+    "@type": "rdf:Property",
+    "rdfs:label": "label",
+    "rdfs:comment": "The label of the progress status.",
+    "schema:rangeIncludes": {
+        "@id": "schema:Text"
+    },
+    "schema:domainIncludes": {
+        "@id": "municipio:ProgressStatus"
+    }
+}

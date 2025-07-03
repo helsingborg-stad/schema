@@ -1,0 +1,12 @@
+{
+    "@id": "municipio:description",
+    "@type": "rdf:Property",
+    "rdfs:label": "description",
+    "rdfs:comment": "The description of the progress status.",
+    "schema:rangeIncludes": {
+        "@id": "schema:Text"
+    },
+    "schema:domainIncludes": {
+        "@id": "municipio:ProgressStatus"
+    }
+}

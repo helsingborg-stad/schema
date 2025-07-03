@@ -1,0 +1,12 @@
+{
+    "@id": "municipio:maxNumber",
+    "@type": "rdf:Property",
+    "rdfs:label": "maxNumber",
+    "rdfs:comment": "The maximum number of the progress status.",
+    "schema:rangeIncludes": {
+        "@id": "schema:Number"
+    },
+    "schema:domainIncludes": {
+        "@id": "municipio:ProgressStatus"
+    }
+}

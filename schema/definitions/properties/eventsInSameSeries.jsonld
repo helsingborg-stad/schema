@@ -1,0 +1,12 @@
+{
+    "@id": "municipio:eventsInSameSeries",
+    "@type": "rdf:Property",
+    "rdfs:label": "eventsInSameSeries",
+    "rdfs:comment": "One or more events that are part of the same series.",
+    "schema:rangeIncludes": {
+        "@id": "schema:Event"
+    },
+    "schema:domainIncludes": {
+        "@id": "schema:Event"
+    }
+}
