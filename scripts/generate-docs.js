@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const schemaPath = path.join(__dirname, 'schema.jsonld');
-const templatePath = path.join(__dirname, 'doc-template.html');
-const outputPath = path.join(__dirname, 'index.html');
+const schemaPath = path.join(__dirname, '../schema/schema.jsonld');
+const templatePath = path.join(__dirname, '../doc-template/doc-template.html');
+const outputPath = path.join(__dirname, '../index.html');
 
 const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
 const graph = schema['@graph'] || [];

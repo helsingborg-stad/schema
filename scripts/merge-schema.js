@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const schemaPath = path.join(__dirname, 'schema.jsonld');
-const classesDir = path.join(__dirname, 'definitions', 'classes');
-const propertiesDir = path.join(__dirname, 'definitions', 'properties');
+const schemaPath = path.join(__dirname, '../schema/schema.jsonld');
+const classesDir = path.join(__dirname, '../schema/definitions/classes');
+const propertiesDir = path.join(__dirname, '../schema/definitions/properties');
 
 // Read the original schema.jsonld to get the @context
 const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
