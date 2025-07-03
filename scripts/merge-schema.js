@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const schemaPath = path.join(__dirname, '../schema/schema.jsonld');
+const schemaPath = path.join(__dirname, '../schema.jsonld');
 const classesDir = path.join(__dirname, '../schema/definitions/classes');
 const propertiesDir = path.join(__dirname, '../schema/definitions/properties');
 
