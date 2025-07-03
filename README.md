@@ -4,7 +4,7 @@ This repository is responsible for exposing custom schema definitions and extens
 
 ## Repository Structure
 
-- `schema/schema.jsonld` — The main schema file, containing all definitions and extensions in a single JSON-LD document. This file is generated automatically.
+- `schema.jsonld` — The main schema file, containing all definitions and extensions in a single JSON-LD document. This file is generated automatically.
 - `schema/definitions/classes/` — Contains individual JSON-LD files for each custom class.
 - `schema/definitions/properties/` — Contains individual JSON-LD files for each custom property.
 - `scripts/merge-schema.js` — A Node.js script that merges all class and property definitions into `schema.jsonld`.
@@ -39,14 +39,14 @@ After making changes or adding new definitions, you need to regenerate the main 
    ```sh
    node scripts/merge-schema.js
    ```
-3. The script will read all files in `schema/definitions/classes/` and `schema/definitions/properties/`, merge them, and update `schema/schema.jsonld`.
+3. The script will read all files in `schema/definitions/classes/` and `schema/definitions/properties/`, merge them, and update `schema.jsonld`.
 
 ## How to Generate HTML Documentation
 
 After merging your schema definitions, you can generate human-readable documentation:
 
 ### Steps
-1. Make sure `schema/schema.jsonld` is up to date (see above).
+1. Make sure `schema.jsonld` is up to date (see above).
 2. Run the following command:
    ```sh
    node scripts/generate-docs.js
