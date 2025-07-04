@@ -17,6 +17,31 @@
             }
         },
         {
+            "@id": "schema:acceptsReservations",
+            "@type": "rdf:Property",
+            "rdfs:label": "acceptsReservations",
+            "rdfs:comment": "Indicates whether a FoodEstablishment or Place accepts reservations. Values can be Boolean, a URL at which reservations can be made, or the strings 'Yes' or 'No'.",
+            "schema:domainIncludes": [
+                {
+                    "@id": "schema:FoodEstablishment"
+                },
+                {
+                    "@id": "schema:Place"
+                }
+            ],
+            "schema:rangeIncludes": [
+                {
+                    "@id": "schema:Boolean"
+                },
+                {
+                    "@id": "schema:Text"
+                },
+                {
+                    "@id": "schema:URL"
+                }
+            ]
+        },
+        {
             "@id": "municipio:description",
             "@type": "rdf:Property",
             "rdfs:label": "description",
