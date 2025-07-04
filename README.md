@@ -4,6 +4,7 @@ This repository is responsible for exposing custom schema definitions and extens
 
 ## Repository Structure
 
+- [Online Documentation](https://schema.municipio.tech/) — The latest published documentation (GitHub Pages).
 - `schema.jsonld` — The main schema file, containing all definitions and extensions in a single JSON-LD document. This file is generated automatically.
 - `schema/definitions/classes/` — Contains individual JSON-LD files for each custom class.
 - `schema/definitions/properties/` — Contains individual JSON-LD files for each custom property.
@@ -52,6 +53,8 @@ After merging your schema definitions, you can generate human-readable documenta
    node scripts/generate-docs.js
    ```
 3. The documentation will be generated at `docs/index.html`.
+
+You can also view the latest published documentation online at [https://schema.municipio.tech/](https://schema.municipio.tech/).
 
 Open this file in your browser to view the documentation.
 
