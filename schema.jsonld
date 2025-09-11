@@ -42,6 +42,22 @@
             ]
         },
         {
+            "@id": "schema:afterSchoolCare",
+            "@type": "rdf:Property",
+            "rdfs:label": "afterSchoolCare",
+            "rdfs:comment": "Contains information about the after school care program offered, if any.",
+            "schema:domainIncludes": [
+                {
+                    "@id": "schema:ElementarySchool"
+                }
+            ],
+            "schema:rangeIncludes": [
+                {
+                    "@id": "schema:Service"
+                }
+            ]
+        },
+        {
             "@id": "municipio:description",
             "@type": "rdf:Property",
             "rdfs:label": "description",
