@@ -142,6 +142,22 @@
             }
         },
         {
+            "@id": "schema:numberOfStudents",
+            "@type": "rdf:Property",
+            "rdfs:label": "numberOfStudents",
+            "rdfs:comment": "Contains information about the number of students enrolled.",
+            "schema:domainIncludes": [
+                {
+                    "@id": "schema:ElementarySchool"
+                }
+            ],
+            "schema:rangeIncludes": [
+                {
+                    "@id": "schema:Boolean"
+                }
+            ]
+        },
+        {
             "@id": "municipio:physicalAccessibilityFeatures",
             "@type": "rdf:Property",
             "rdfs:label": "physicalAccessibilityFeatures",
