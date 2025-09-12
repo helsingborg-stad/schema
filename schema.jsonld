@@ -138,6 +138,18 @@
             }
         },
         {
+            "@id": "schema:numberOfChildren",
+            "@type": "rdf:Property",
+            "rdfs:label": "numberOfChildren",
+            "rdfs:comment": "Contains information about the number of children enrolled.",
+            "schema:domainIncludes": {
+                "@id": "schema:PreSchool"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:Boolean"
+            }
+        },
+        {
             "@id": "schema:numberOfStudents",
             "@type": "rdf:Property",
             "rdfs:label": "numberOfStudents",
