@@ -4,7 +4,7 @@
     "rdfs:label": "numberOfChildren",
     "rdfs:comment": "Contains information about the number of children enrolled.",
     "schema:domainIncludes": {
-        "@id": "schema:PreSchool"
+        "@id": "schema:Preschool"
     },
     "schema:rangeIncludes": {
         "@id": "schema:Boolean"
