@@ -7,6 +7,6 @@
         "@id": "schema:Preschool"
     },
     "schema:rangeIncludes": {
-        "@id": "schema:Boolean"
+        "@id": "schema:Number"
     }
 }

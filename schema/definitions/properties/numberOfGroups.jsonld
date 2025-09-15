@@ -1,0 +1,12 @@
+{
+    "@id": "schema:numberOfGroups",
+    "@type": "rdf:Property",
+    "rdfs:label": "numberOfGroups",
+    "rdfs:comment": "Contains information about the number of groups the preschool is divided into.",
+    "schema:domainIncludes": {
+        "@id": "schema:Preschool"
+    },
+    "schema:rangeIncludes": {
+        "@id": "schema:Number"
+    }
+}
