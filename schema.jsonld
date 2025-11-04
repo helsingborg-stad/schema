@@ -196,6 +196,18 @@
             "schema:rangeIncludes": {
                 "@id": "municipio:ProgressStatus"
             }
+        },
+        {
+            "@id": "schema:video",
+            "@type": "rdf:Property",
+            "rdfs:label": "video",
+            "rdfs:comment": "A video of the item. This can be a URL or a fully described VideoObject.",
+            "schema:domainIncludes": {
+                "@id": "schema:EducationalOrganization"
+            },
+            "schema:rangeIncludes": {
+                "@id": "schema:VideoObject"
+            }
         }
     ]
 }
