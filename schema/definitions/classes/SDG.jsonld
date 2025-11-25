@@ -1,5 +1,5 @@
 {
-    "@id": "municipio:SDG",
+    "@id": "municipio:SingleDigitalGateway",
     "@type": "rdfs:Class",
     "rdfs:comment": "Single Digital Gateway (SDG)",
     "rdfs:label": "SingleDigitalGateway",

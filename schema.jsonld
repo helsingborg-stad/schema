@@ -26,51 +26,51 @@
             }
         },
         {
-            "@id": "municipio:SDG:location",
+            "@id": "municipio:location",
             "@type": "rdf:Property",
-            "rdfs:label": "Location",
+            "rdfs:label": "location",
             "rdfs:comment": "The description of the location related to the SDG.",
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
             },
             "schema:domainIncludes": {
-                "@id": "municipio:SDG"
+                "@id": "municipio:SingleDigitalGateway"
             }
         },
         {
-            "@id": "municipio:SDG:policy",
+            "@id": "municipio:policy",
             "@type": "rdf:Property",
-            "rdfs:label": "Policy",
+            "rdfs:label": "policy",
             "rdfs:comment": "The description of the policy related to the SDG.",
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
             },
             "schema:domainIncludes": {
-                "@id": "municipio:SDG"
+                "@id": "municipio:SingleDigitalGateway"
             }
         },
         {
-            "@id": "municipio:SDG:policyCode",
+            "@id": "municipio:policyCode",
             "@type": "rdf:Property",
-            "rdfs:label": "Policy Code",
+            "rdfs:label": "policyCode",
             "rdfs:comment": "The policy code related to the SDG.",
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
             },
             "schema:domainIncludes": {
-                "@id": "municipio:SDG"
+                "@id": "municipio:SingleDigitalGateway"
             }
         },
         {
-            "@id": "municipio:SDG:service",
+            "@id": "municipio:service",
             "@type": "rdf:Property",
-            "rdfs:label": "Service",
+            "rdfs:label": "service",
             "rdfs:comment": "The description of the service related to the SDG.",
             "schema:rangeIncludes": {
                 "@id": "schema:Text"
             },
             "schema:domainIncludes": {
-                "@id": "municipio:SDG"
+                "@id": "municipio:SingleDigitalGateway"
             }
         },
         {
