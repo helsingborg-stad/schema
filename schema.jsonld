@@ -17,6 +17,63 @@
             }
         },
         {
+            "@id": "municipio:SDG",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Single Digital Gateway (SDG)",
+            "rdfs:label": "Single Digital Gateway",
+            "rdfs:subClassOf": {
+                "@id": "schema:Thing"
+            }
+        },
+        {
+            "@id": "municipio:SDG:location",
+            "@type": "rdf:Property",
+            "rdfs:label": "Location",
+            "rdfs:comment": "The description of the location related to the SDG.",
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:domainIncludes": {
+                "@id": "municipio:SDG"
+            }
+        },
+        {
+            "@id": "municipio:SDG:policy",
+            "@type": "rdf:Property",
+            "rdfs:label": "Policy",
+            "rdfs:comment": "The description of the policy related to the SDG.",
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:domainIncludes": {
+                "@id": "municipio:SDG"
+            }
+        },
+        {
+            "@id": "municipio:SDG:policyCode",
+            "@type": "rdf:Property",
+            "rdfs:label": "Policy Code",
+            "rdfs:comment": "The policy code related to the SDG.",
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:domainIncludes": {
+                "@id": "municipio:SDG"
+            }
+        },
+        {
+            "@id": "municipio:SDG:service",
+            "@type": "rdf:Property",
+            "rdfs:label": "Service",
+            "rdfs:comment": "The description of the service related to the SDG.",
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:domainIncludes": {
+                "@id": "municipio:SDG"
+            }
+        },
+        {
             "@id": "schema:acceptsReservations",
             "@type": "rdf:Property",
             "rdfs:label": "acceptsReservations",

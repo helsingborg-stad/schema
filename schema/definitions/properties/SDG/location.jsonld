@@ -1,0 +1,12 @@
+{
+    "@id": "municipio:SDG:location",
+    "@type": "rdf:Property",
+    "rdfs:label": "Location",
+    "rdfs:comment": "The description of the location related to the SDG.",
+    "schema:rangeIncludes": {
+        "@id": "schema:Text"
+    },
+    "schema:domainIncludes": {
+        "@id": "municipio:SDG"
+    }
+}

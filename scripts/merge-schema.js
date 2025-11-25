@@ -12,9 +12,16 @@ const context = schema['@context'];
 // Helper to read all JSON files in a directory
 function readJsonFiles(dir) {
   if (!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir)
-    .filter(f => f.endsWith('.jsonld'))
-    .map(f => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
+  let results = [];
+  fs.readdirSync(dir).forEach(f => {
+    const fullPath = path.join(dir, f);
+    if (fs.statSync(fullPath).isDirectory()) {
+      results = results.concat(readJsonFiles(fullPath));
+    } else if (f.endsWith('.jsonld')) {
+      results.push(JSON.parse(fs.readFileSync(fullPath, 'utf8')));
+    }
+  });
+  return results;
 }
 
 // Collect all definitions

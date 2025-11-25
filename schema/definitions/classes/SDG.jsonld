@@ -1,0 +1,9 @@
+{
+    "@id": "municipio:SDG",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "Single Digital Gateway (SDG)",
+    "rdfs:label": "Single Digital Gateway",
+    "rdfs:subClassOf": {
+        "@id": "schema:Thing"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "@id": "municipio:SDG:policy",
+    "@type": "rdf:Property",
+    "rdfs:label": "Policy",
+    "rdfs:comment": "The description of the policy related to the SDG.",
+    "schema:rangeIncludes": {
+        "@id": "schema:Text"
+    },
+    "schema:domainIncludes": {
+        "@id": "municipio:SDG"
+    }
+}
