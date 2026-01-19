@@ -1,0 +1,12 @@
+{
+    "@id": "municipio:schedule.itemAvailability",
+    "@type": "rdf:Property",
+    "rdfs:label": "itemAvailability",
+    "rdfs:comment": "The availability of the schedule.",
+    "schema:rangeIncludes": {
+        "@id": "schema:ItemAvailability"
+    },
+    "schema:domainIncludes": {
+        "@id": "municipio:Schedule"
+    }
+}
