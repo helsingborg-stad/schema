@@ -1,5 +1,5 @@
 {
-    "@id": "municipio:schedule.itemAvailability",
+    "@id": "schema:schedule.itemAvailability",
     "@type": "rdf:Property",
     "rdfs:label": "itemAvailability",
     "rdfs:comment": "The availability of the schedule.",
@@ -7,6 +7,6 @@
         "@id": "schema:ItemAvailability"
     },
     "schema:domainIncludes": {
-        "@id": "municipio:Schedule"
+        "@id": "schema:Schedule"
     }
 }
