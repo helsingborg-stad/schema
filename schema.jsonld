@@ -74,12 +74,12 @@
             }
         },
         {
-            "@id": "schema:schedule.itemAvailability",
+            "@id": "schema:schedule.offers",
             "@type": "rdf:Property",
-            "rdfs:label": "itemAvailability",
-            "rdfs:comment": "The availability of the schedule.",
+            "rdfs:label": "offers",
+            "rdfs:comment": "The offers available on this schedule.",
             "schema:rangeIncludes": {
-                "@id": "schema:ItemAvailability"
+                "@id": "schema:Offer"
             },
             "schema:domainIncludes": {
                 "@id": "schema:Schedule"
