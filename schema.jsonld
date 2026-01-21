@@ -74,18 +74,6 @@
             }
         },
         {
-            "@id": "schema:schedule.offers",
-            "@type": "rdf:Property",
-            "rdfs:label": "offers",
-            "rdfs:comment": "The offers available on this schedule.",
-            "schema:rangeIncludes": {
-                "@id": "schema:Offer"
-            },
-            "schema:domainIncludes": {
-                "@id": "schema:Schedule"
-            }
-        },
-        {
             "@id": "schema:acceptsReservations",
             "@type": "rdf:Property",
             "rdfs:label": "acceptsReservations",
