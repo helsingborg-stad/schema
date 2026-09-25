@@ -26,6 +26,24 @@
             }
         },
         {
+            "@id": "municipio:SponsorDemandEvent",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Event that offers sponsorship",
+            "rdfs:label": "SponsorDemandEvent",
+            "rdfs:subClassOf": {
+                "@id": "schema:Event"
+            }
+        },
+        {
+            "@id": "municipio:SponsorOffer",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Organization that offers sponsorship",
+            "rdfs:label": "SponsorOffer",
+            "rdfs:subClassOf": {
+                "@id": "schema:Offer"
+            }
+        },
+        {
             "@id": "municipio:location",
             "@type": "rdf:Property",
             "rdfs:label": "location",

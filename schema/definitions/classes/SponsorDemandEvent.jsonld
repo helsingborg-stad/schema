@@ -1,0 +1,9 @@
+{
+    "@id": "municipio:SponsorDemandEvent",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "Event that offers sponsorship",
+    "rdfs:label": "SponsorDemandEvent",
+    "rdfs:subClassOf": {
+        "@id": "schema:Event"
+    }
+}
