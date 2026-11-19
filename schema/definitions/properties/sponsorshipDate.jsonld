@@ -1,0 +1,17 @@
+{
+    "@id": "sponsor:sponsorshipDate",
+    "@type": "rdf:Property",
+    "rdfs:label": "sponsorshipDate",
+    "rdfs:comment": "Date or date and time when the offered support is available.",
+    "schema:rangeIncludes": [
+        {
+            "@id": "schema:Date"
+        },
+        {
+            "@id": "schema:DateTime"
+        }
+    ],
+    "schema:domainIncludes": {
+        "@id": "sponsor:SponsorOffer"
+    }
+}

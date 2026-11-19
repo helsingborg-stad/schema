@@ -1,7 +1,7 @@
 {
-    "@id": "municipio:SponsorOffer",
+    "@id": "sponsor:SponsorOffer",
     "@type": "rdfs:Class",
-    "rdfs:comment": "Organization that offers sponsorship",
+    "rdfs:comment": "An offer of sponsorship or support.",
     "rdfs:label": "SponsorOffer",
     "rdfs:subClassOf": {
         "@id": "schema:Offer"

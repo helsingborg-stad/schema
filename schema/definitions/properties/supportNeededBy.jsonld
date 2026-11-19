@@ -1,0 +1,17 @@
+{
+    "@id": "sponsor:supportNeededBy",
+    "@type": "rdf:Property",
+    "rdfs:label": "supportNeededBy",
+    "rdfs:comment": "Date or date and time by which support is needed.",
+    "schema:rangeIncludes": [
+        {
+            "@id": "schema:Date"
+        },
+        {
+            "@id": "schema:DateTime"
+        }
+    ],
+    "schema:domainIncludes": {
+        "@id": "sponsor:SponsorDemand"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "@id": "sponsor:counterPerformance",
+    "@type": "rdf:Property",
+    "rdfs:label": "counterPerformance",
+    "rdfs:comment": "What the association offers in return for sponsorship.",
+    "schema:rangeIncludes": {
+        "@id": "schema:Text"
+    },
+    "schema:domainIncludes": {
+        "@id": "sponsor:SponsorDemand"
+    }
+}

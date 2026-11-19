@@ -1,0 +1,12 @@
+{
+    "@id": "sponsor:sponsorPreferences",
+    "@type": "rdf:Property",
+    "rdfs:label": "sponsorPreferences",
+    "rdfs:comment": "Preferences regarding potential sponsors.",
+    "schema:rangeIncludes": {
+        "@id": "schema:Text"
+    },
+    "schema:domainIncludes": {
+        "@id": "sponsor:SponsorDemand"
+    }
+}

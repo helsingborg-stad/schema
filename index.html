@@ -88,16 +88,16 @@
     </ul>
   </div>
 <div class="class">
-    <h3 id="municipio:SponsorDemandEvent">SponsorDemandEvent</h3>
-    <p>Event that offers sponsorship</p>
+    <h3 id="sponsor:SponsorDemand">SponsorDemand</h3>
+    <p>A listing in which an association seeks sponsorship.</p>
     <ul>
       <li><b>Type:</b> rdfs:Class</li>
-      <li><b>Subclass of:</b> schema:Event</li>
+      <li><b>Subclass of:</b> schema:Demand</li>
     </ul>
   </div>
 <div class="class">
-    <h3 id="municipio:SponsorOffer">SponsorOffer</h3>
-    <p>Organization that offers sponsorship</p>
+    <h3 id="sponsor:SponsorOffer">SponsorOffer</h3>
+    <p>An offer of sponsorship or support.</p>
     <ul>
       <li><b>Type:</b> rdfs:Class</li>
       <li><b>Subclass of:</b> schema:Offer</li>
@@ -198,6 +198,56 @@
   
 
     <div class="domain-group">
+      <h3>sponsor:SponsorDemand</h3>
+      <div class="property">
+    <h4 id="sponsor:counterPerformance">counterPerformance</h4>
+    <p>What the association offers in return for sponsorship.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> sponsor:SponsorDemand</li>
+      <li><b>Range:</b> schema:Text</li>
+    </ul>
+  </div>
+<div class="property">
+    <h4 id="schema:keywords">keywords</h4>
+    <p>Resource terms associated with a sponsorship listing.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> sponsor:SponsorDemand, sponsor:SponsorOffer</li>
+      <li><b>Range:</b> schema:DefinedTerm</li>
+    </ul>
+  </div>
+<div class="property">
+    <h4 id="sponsor:sponsorPreferences">sponsorPreferences</h4>
+    <p>Preferences regarding potential sponsors.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> sponsor:SponsorDemand</li>
+      <li><b>Range:</b> schema:Text</li>
+    </ul>
+  </div>
+<div class="property">
+    <h4 id="sponsor:supportLocation">supportLocation</h4>
+    <p>Location where support is needed.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> sponsor:SponsorDemand</li>
+      <li><b>Range:</b> schema:Text</li>
+    </ul>
+  </div>
+<div class="property">
+    <h4 id="sponsor:supportNeededBy">supportNeededBy</h4>
+    <p>Date or date and time by which support is needed.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> sponsor:SponsorDemand</li>
+      <li><b>Range:</b> schema:Date, schema:DateTime</li>
+    </ul>
+  </div>
+    </div>
+
+
+    <div class="domain-group">
       <h3>municipio:ProgressStatus</h3>
       <div class="property">
     <h4 id="municipio:description">description</h4>
@@ -285,6 +335,47 @@
   
 
     <div class="domain-group">
+      <h3>sponsor:SponsorOffer</h3>
+      <div class="property">
+    <h4 id="schema:keywords">keywords</h4>
+    <p>Resource terms associated with a sponsorship listing.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> sponsor:SponsorDemand, sponsor:SponsorOffer</li>
+      <li><b>Range:</b> schema:DefinedTerm</li>
+    </ul>
+  </div>
+<div class="property">
+    <h4 id="sponsor:practicalInformation">practicalInformation</h4>
+    <p>Practical details about the offered sponsorship.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> sponsor:SponsorOffer</li>
+      <li><b>Range:</b> schema:Text</li>
+    </ul>
+  </div>
+<div class="property">
+    <h4 id="sponsor:requestedCounterPerformance">requestedCounterPerformance</h4>
+    <p>What the sponsor requests in return.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> sponsor:SponsorOffer</li>
+      <li><b>Range:</b> schema:Text</li>
+    </ul>
+  </div>
+<div class="property">
+    <h4 id="sponsor:sponsorshipDate">sponsorshipDate</h4>
+    <p>Date or date and time when the offered support is available.</p>
+    <ul>
+      <li><b>Type:</b> rdf:Property</li>
+      <li><b>Domain:</b> sponsor:SponsorOffer</li>
+      <li><b>Range:</b> schema:Date, schema:DateTime</li>
+    </ul>
+  </div>
+    </div>
+
+
+    <div class="domain-group">
       <h3>schema:Preschool</h3>
       <div class="property">
     <h4 id="schema:numberOfChildren">numberOfChildren</h4>
@@ -305,7 +396,7 @@
     </ul>
   </div>
     </div>
-  
+
 
     <div class="domain-group">
       <h3>schema:Project</h3>

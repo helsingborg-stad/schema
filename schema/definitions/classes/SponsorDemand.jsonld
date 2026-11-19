@@ -1,0 +1,9 @@
+{
+    "@id": "sponsor:SponsorDemand",
+    "@type": "rdfs:Class",
+    "rdfs:comment": "A listing in which an association seeks sponsorship.",
+    "rdfs:label": "SponsorDemand",
+    "rdfs:subClassOf": {
+        "@id": "schema:Demand"
+    }
+}

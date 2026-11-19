@@ -4,7 +4,8 @@
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "municipio": "https://schema.municipio.tech/schema.jsonld"
+        "municipio": "https://schema.municipio.tech/schema.jsonld",
+        "sponsor": "https://schema.municipio.tech/schema.jsonld#"
     },
     "@graph": [
         {
@@ -26,18 +27,18 @@
             }
         },
         {
-            "@id": "municipio:SponsorDemandEvent",
+            "@id": "sponsor:SponsorDemand",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Event that offers sponsorship",
-            "rdfs:label": "SponsorDemandEvent",
+            "rdfs:comment": "A listing in which an association seeks sponsorship.",
+            "rdfs:label": "SponsorDemand",
             "rdfs:subClassOf": {
-                "@id": "schema:Event"
+                "@id": "schema:Demand"
             }
         },
         {
-            "@id": "municipio:SponsorOffer",
+            "@id": "sponsor:SponsorOffer",
             "@type": "rdfs:Class",
-            "rdfs:comment": "Organization that offers sponsorship",
+            "rdfs:comment": "An offer of sponsorship or support.",
             "rdfs:label": "SponsorOffer",
             "rdfs:subClassOf": {
                 "@id": "schema:Offer"
@@ -129,6 +130,18 @@
             }
         },
         {
+            "@id": "sponsor:counterPerformance",
+            "@type": "rdf:Property",
+            "rdfs:label": "counterPerformance",
+            "rdfs:comment": "What the association offers in return for sponsorship.",
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:domainIncludes": {
+                "@id": "sponsor:SponsorDemand"
+            }
+        },
+        {
             "@id": "municipio:description",
             "@type": "rdf:Property",
             "rdfs:label": "description",
@@ -162,6 +175,23 @@
             },
             "schema:rangeIncludes": {
                 "@id": "schema:Boolean"
+            }
+        },
+        {
+            "@id": "schema:keywords",
+            "@type": "rdf:Property",
+            "rdfs:label": "keywords",
+            "rdfs:comment": "Resource terms associated with a sponsorship listing.",
+            "schema:domainIncludes": [
+                {
+                    "@id": "sponsor:SponsorDemand"
+                },
+                {
+                    "@id": "sponsor:SponsorOffer"
+                }
+            ],
+            "schema:rangeIncludes": {
+                "@id": "schema:DefinedTerm"
             }
         },
         {
@@ -261,6 +291,59 @@
             }
         },
         {
+            "@id": "sponsor:practicalInformation",
+            "@type": "rdf:Property",
+            "rdfs:label": "practicalInformation",
+            "rdfs:comment": "Practical details about the offered sponsorship.",
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:domainIncludes": {
+                "@id": "sponsor:SponsorOffer"
+            }
+        },
+        {
+            "@id": "sponsor:requestedCounterPerformance",
+            "@type": "rdf:Property",
+            "rdfs:label": "requestedCounterPerformance",
+            "rdfs:comment": "What the sponsor requests in return.",
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:domainIncludes": {
+                "@id": "sponsor:SponsorOffer"
+            }
+        },
+        {
+            "@id": "sponsor:sponsorPreferences",
+            "@type": "rdf:Property",
+            "rdfs:label": "sponsorPreferences",
+            "rdfs:comment": "Preferences regarding potential sponsors.",
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:domainIncludes": {
+                "@id": "sponsor:SponsorDemand"
+            }
+        },
+        {
+            "@id": "sponsor:sponsorshipDate",
+            "@type": "rdf:Property",
+            "rdfs:label": "sponsorshipDate",
+            "rdfs:comment": "Date or date and time when the offered support is available.",
+            "schema:rangeIncludes": [
+                {
+                    "@id": "schema:Date"
+                },
+                {
+                    "@id": "schema:DateTime"
+                }
+            ],
+            "schema:domainIncludes": {
+                "@id": "sponsor:SponsorOffer"
+            }
+        },
+        {
             "@id": "municipio:status",
             "@type": "rdf:Property",
             "rdfs:label": "status",
@@ -270,6 +353,35 @@
             },
             "schema:rangeIncludes": {
                 "@id": "municipio:ProgressStatus"
+            }
+        },
+        {
+            "@id": "sponsor:supportLocation",
+            "@type": "rdf:Property",
+            "rdfs:label": "supportLocation",
+            "rdfs:comment": "Location where support is needed.",
+            "schema:rangeIncludes": {
+                "@id": "schema:Text"
+            },
+            "schema:domainIncludes": {
+                "@id": "sponsor:SponsorDemand"
+            }
+        },
+        {
+            "@id": "sponsor:supportNeededBy",
+            "@type": "rdf:Property",
+            "rdfs:label": "supportNeededBy",
+            "rdfs:comment": "Date or date and time by which support is needed.",
+            "schema:rangeIncludes": [
+                {
+                    "@id": "schema:Date"
+                },
+                {
+                    "@id": "schema:DateTime"
+                }
+            ],
+            "schema:domainIncludes": {
+                "@id": "sponsor:SponsorDemand"
             }
         },
         {

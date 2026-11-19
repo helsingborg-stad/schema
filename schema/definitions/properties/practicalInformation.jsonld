@@ -1,0 +1,12 @@
+{
+    "@id": "sponsor:practicalInformation",
+    "@type": "rdf:Property",
+    "rdfs:label": "practicalInformation",
+    "rdfs:comment": "Practical details about the offered sponsorship.",
+    "schema:rangeIncludes": {
+        "@id": "schema:Text"
+    },
+    "schema:domainIncludes": {
+        "@id": "sponsor:SponsorOffer"
+    }
+}

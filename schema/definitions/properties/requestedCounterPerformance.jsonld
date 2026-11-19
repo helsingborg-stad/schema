@@ -1,0 +1,12 @@
+{
+    "@id": "sponsor:requestedCounterPerformance",
+    "@type": "rdf:Property",
+    "rdfs:label": "requestedCounterPerformance",
+    "rdfs:comment": "What the sponsor requests in return.",
+    "schema:rangeIncludes": {
+        "@id": "schema:Text"
+    },
+    "schema:domainIncludes": {
+        "@id": "sponsor:SponsorOffer"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "@id": "schema:keywords",
+    "@type": "rdf:Property",
+    "rdfs:label": "keywords",
+    "rdfs:comment": "Resource terms associated with a sponsorship listing.",
+    "schema:domainIncludes": [
+        {
+            "@id": "sponsor:SponsorDemand"
+        },
+        {
+            "@id": "sponsor:SponsorOffer"
+        }
+    ],
+    "schema:rangeIncludes": {
+        "@id": "schema:DefinedTerm"
+    }
+}

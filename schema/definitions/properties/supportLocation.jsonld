@@ -1,0 +1,12 @@
+{
+    "@id": "sponsor:supportLocation",
+    "@type": "rdf:Property",
+    "rdfs:label": "supportLocation",
+    "rdfs:comment": "Location where support is needed.",
+    "schema:rangeIncludes": {
+        "@id": "schema:Text"
+    },
+    "schema:domainIncludes": {
+        "@id": "sponsor:SponsorDemand"
+    }
+}
